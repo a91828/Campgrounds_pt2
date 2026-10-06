@@ -4,7 +4,6 @@ import android.support.annotation.Keep
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
-// TODO: Create a data class for the Data Response
 @Keep
 @Serializable
 data class CampgroundResponse(
@@ -12,7 +11,6 @@ data class CampgroundResponse(
     val data: List<Campground>?
 )
 
-// TODO: Implement remaining keys of the Campground data class
 @Keep
 @Serializable
 data class Campground(
@@ -32,8 +30,6 @@ data class Campground(
         get() = images?.firstOrNull { !it.url.isNullOrEmpty() }?.url ?: ""
 }
 
-
-// TODO: Create a data class for the Image Response
 @Keep
 @Serializable
 data class CampgroundImage(
